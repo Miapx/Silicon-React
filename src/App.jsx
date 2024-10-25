@@ -8,6 +8,8 @@ import { PageTwo } from './components/PageTwo'
 import PageThree from './components/PageThree'
 import PageFour from './components/PageFour'
 import Testimonials from './components/Testimonials'
+import Questions from './components/Questions'
+import Subscribe from './components/Subscribe'
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
       <PageThree />
       <PageFour />
       <Testimonials />
+      <Questions />
+      <Subscribe />
     </main>
 
     <Footer />
