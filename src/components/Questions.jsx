@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import phoneCall from '../assets/images/phonecall.svg'
 import arrowPrimaryClr from '../assets/images/arrowrightprimclr.svg'
 import phoneMsg from '../assets/images/phonemsg.svg'
@@ -7,14 +7,18 @@ import FaqItem from './FaqItem'
 
 const Questions = () => {
 
-    const [faqItems, setFaqItems] = useState([
-        { question: "Is any of my personal information stored in the App?", answer: "Nuncccddddddddd duis id aenean gravida tincidunt eu, tempor ullamcorper.Nuncccddddddddd duis id aenean gravida tincidunt eu, tempor ullamcorper." },
-        { question: "Is any of my candy stored in the App?", answer: "Nah." },
-        { question: "Is any of my dogs stored in the App?", answer: "Yah." },
-        { question: "Is any of my ram stored in the App?", answer: "Kindah." },
-        { question: "Is any of my personality stored in the App?", answer: "Hah." },
-        { question: "Is any of my humour stored in the App?", answer: "Wha." }
-    ])
+    const [faqItems, setFaqItems] = useState([])
+    
+
+    const fetchData = async () => {
+        const res = await fetch ('https://win24-assignment.azurewebsites.net/api/faq')
+        const data = await res.json()
+        setFaqItems(data)
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [])
 
 
     return (
@@ -49,7 +53,7 @@ const Questions = () => {
                     <div className="accordion">
 
                     {
-                        faqItems.map((item, index) => (<FaqItem key={index} item={item} />))
+                        faqItems.map((item) => (<FaqItem key={item.id} item={item} />))
                     }
 
                     </div> 
