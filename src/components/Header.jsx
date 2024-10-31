@@ -4,6 +4,7 @@ import LogotypeLight from '../assets/images/logo-light.svg'
 import Navbar from './Navbar'
 import DarkModeSwitch from './DarkModeSwitch'
 import BtnSignIn from './BtnSignIn'
+import HamMenu from './HamMenu'
 
 
 const Header = () => {
@@ -16,7 +17,9 @@ const Header = () => {
                 <Navbar />
                 <DarkModeSwitch />
                 <BtnSignIn />
+                <HamMenu />
 
+              
             </div>
         </header>
     )

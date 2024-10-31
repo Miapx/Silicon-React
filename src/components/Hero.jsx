@@ -6,6 +6,7 @@ import googlePlayLight from '../assets/images/googleplay-light.svg'
 import iphoneMyBudget from '../assets/images/iphone-mybudget.svg'
 import iphoneYourCards from '../assets/images/iphone-yourcards.svg'
 
+
 const Hero = () => {
   return (
     <section id="hero" className="grad">

@@ -39,7 +39,7 @@ const Subscribe = () => {
             <div className="notifbell"> 
                 <img src={notifBell} alt="Notification-bell" />
             </div>
-            <div>
+            <div className='subscribeText'>
                 <h2>Subscribe to our newsletter to stay informed about latest updates</h2>
             </div>
             <form onSubmit={handleSubmit}  id="emailtosub" noValidate> 

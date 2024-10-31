@@ -151,6 +151,10 @@ header .container {
     align-items: center;
 }
 
+.hamburger {
+    display: none;
+}
+
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -321,6 +325,7 @@ gap: 1rem;
             margin-bottom: 2rem;
         }
     }
+
 }
 
 .buttons {
@@ -332,8 +337,7 @@ gap: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 10rem;
-    margin-bottom: 4rem;
+    padding-top: 5rem;
 
     span:hover {
         color: var(--color-primary);
@@ -344,7 +348,7 @@ gap: 1rem;
     text-decoration: none;
 }
 
-.images { 
+/* .images { 
     grid-area: images;
     position: relative;
 
@@ -361,7 +365,42 @@ gap: 1rem;
         bottom: -60px;
         right: 0;
     }
+} */
+
+/* nedan gör att bilderna krymper, ovan ger en scroll istället och bevarar bilderns storlek */
+
+.images { 
+    grid-area: images;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+
+    .img-back {
+        position: absolute;
+        height: 90%;
+        width: 100%;
+        object-fit: contain;
+        z-index: -10;
+        bottom: -15%;
+    }
+
+    .img-front {
+        position: absolute;
+        height: 90%;
+        width: 100%;
+        object-fit: contain;
+
+
+
+        z-index: -5;
+        bottom: -5%;
+        left: 25%;
+    }
 }
+
+
+
+
 
 #brands {
     padding-top: 4rem;
@@ -438,31 +477,64 @@ gap: 1rem;
 
 #pagethree {
     background-color: var(--color-grey100);
+    color: var(--color-grey900);
     display: grid;
-    grid-template-areas: "heading"
+    grid-template-areas:    "heading"
                             "carousel"
                             "undercarousel";
-    color: var(--color-grey900);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         grid-template-areas: "heading";
         text-align: center;
         padding: 3rem;
+        margin: 0;
         font-size: 2.5rem;
+        font-weight: 800;
     }
 
     h2 {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        font-weight: 800;
     }
 }
 
 .carousel {
     grid-area: "carousel";
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
+    height: 60vh;
+    width: 100%;
+}
+
+#phone-1 {
+    object-fit: contain;
+    height: 100%;
+    width: 30%;
+}
+
+#phone-2 {
+    object-fit: contain;
+    height: 100%;
+    width: 30%;
+}
+
+#phone-3 {
+    object-fit: contain;
+    height: 100%;
+    width: 30%;
+}
+
+#phone-4 {
+    display: none;
 }
 
 .undercarousel {
@@ -472,6 +544,110 @@ gap: 1rem;
     padding-bottom: 4rem;
 }
 
+
+
+
+#pagefour {
+    .container { 
+        max-width: 1320px;
+    display: grid;
+    grid-template-areas:    "moneytransfer imagestransfer"
+                            "imagespayment moneypaymenttext";
+    padding: 4rem 4rem;
+    gap: 3rem;
+    /* margin-bottom: 3rem; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+   .btn-primary {
+    gap: 0.5rem;
+   }
+   
+    a {
+        width: 40%;
+        margin-top: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        /* color: var(--color-grey700); */
+        li {
+            padding: 0.5rem; 
+            padding-left: 0; 
+            display: flex;
+            align-items: center;
+        }
+   }
+
+   p{
+    /* color: var(--color-grey700); */
+   }
+}
+
+.checkmark {
+    margin-right: 0.5rem;
+}
+
+.moneytransfertext {
+    grid-area: "moneytransfer";
+}
+
+.imagestransfer {
+    grid-area: "imagestransfer"; 
+    /* height: 80vh; */
+    width: 100%;
+      
+}
+
+.imgtransfer {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+.imagespayment {
+    grid-area: "imagespayment";
+    /* height: 60vh; */
+    width: 100%;
+}
+
+.imgpayment {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+.moneypaymenttext {
+    grid-area: "moneypaymenttext";
+
+    a {
+        margin-top: 3rem;
+    }
+}
+
+.features {
+    display: flex;
+    gap: 2rem;    
+}
+
+.featurebox .icon{
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+/* 
 #pagefour {
     .container { 
     display: grid;
@@ -538,7 +714,11 @@ gap: 1rem;
 
 .featurebox .icon{
     margin-bottom: 1rem;
-}
+} */
+
+
+
+
 
 #pagefive {
     background-color: var(--color-grey100);
@@ -669,10 +849,6 @@ gap: 1rem;
     }
 }
 
-.FAQright .FAQstablet {
-    display: none;
-}
-
 .accordion-link {
     display: flex;
     justify-content: space-between;
@@ -688,7 +864,6 @@ gap: 1rem;
     font-size: 1rem;
     font-weight: 600;
     box-shadow: 0 2px 5px #0b0f1913;
-
     a {
         color: var(--color-grey900);
         text-decoration: none;
@@ -713,14 +888,17 @@ gap: 1rem;
     padding: .5rem 0;
 } */
 
-   .expandable .btn-circle {
+/* 
+.btn-circle-active {
     background-color: #6366F1;
     rotate: 180deg;
     color: #fff;
-}
+} */
+
 
 .expandable {
     min-height: 0px;
+    transition: all 300ms;
 }
 
 #subscribe {

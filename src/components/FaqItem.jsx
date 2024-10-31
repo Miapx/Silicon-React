@@ -18,7 +18,7 @@ const FaqItem = ({item}) => {
     <div className="accordion-item">                   
         <a className="accordion-link" href="#question1" onClick={toggleFaqItem}><p className="whitetext">{item.title}</p>
             <button className="btn-circle" aria-label="Click for answer">
-                <i className="fa-solid fa-chevron-down"></i>
+                <i style={{transform:`rotate(${!showFaqItem ? 180 :0}deg)`, transition: "all 300ms"}} className="fa-solid fa-chevron-down"></i>
             </button>  
         </a>             
         <div className="answer">
