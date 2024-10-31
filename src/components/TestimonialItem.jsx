@@ -6,10 +6,10 @@ const TestimonialItem = ({item}) => {
     
      <div className="reviewbox">
      <img className="quotes" src={quotes} alt="Quotes" />
-        <img className="ratings" src={item.starRating} alt="4 star rating" />
+        <img className="ratings" src={item.starRating} alt="rating" />
         <p className="clientrating text-L">{item.comment}</p>
         <div className="clientinfo">
-            <img src={item.avatarURL} alt="Client profile pic" />
+            <img src={item.avatarUrl} alt="Client profile pic" />
         <div>
             <p className="clientname whitetext">{item.author}</p>
             <p className="clientrole text-S">{item.jobRole}</p>

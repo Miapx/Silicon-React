@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-:root {
+:root{
     --color-primary: #6366F1;
     --color-white: #fff;
     --color-grey900: #0B0F19;
@@ -33,15 +33,24 @@ input, button, textarea, select {
     font: inherit;
 }
 
-
-
-
-
-html {
-    color-scheme: light;
+:root[data-theme="light"] {
+    --color-primary: #6366F1;
+    --color-white: #fff;
+    --color-grey900: #0B0F19;
+    --color-grey800: #33354D;
+    --color-grey600: #9397AD;
+    --color-grey500: #B4B7C9;
+    --color-grey300: #E2E5F1;
+    --color-grey400: #D4D7E5;
+    --color-grey700: #565973;
+    --color-grey100: #F3F6FF;
+    --color-bg: #fff;
+    --color-smsucess: #22C55E;
+    --color-bg-card: hsl(225, 100%, 100%);
+    --color-err: #EF4444;
 }
 
-.dark {
+:root[data-theme="dark"] {
     color-scheme: dark;
     --color-bg: #0B0F19;
     --color-grey100: #f3f6ff0c;
@@ -89,12 +98,7 @@ html {
     .invalid-input {
         color: var(--color-err);
     }
-
-
 }
-
-
-
 
 
 body {
@@ -704,12 +708,12 @@ gap: 1rem;
 
 }
 
-.open .answer{
+/* .open .answer{
     grid-template-rows: 1fr;
     padding: .5rem 0;
-}
+} */
 
-.open .btn-circle {
+   .expandable .btn-circle {
     background-color: #6366F1;
     rotate: 180deg;
     color: #fff;
