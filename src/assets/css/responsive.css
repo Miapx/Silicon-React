@@ -1,6 +1,14 @@
-#hero {
-    @media (max-width: 900px) {
-    
+@media (max-width: 1270px) {
+    #hero {
+        .images {
+            bottom: -10%;
+        }
+    }
+}
+ 
+ @media (max-width: 900px) {
+
+    #hero {
         .container {
             max-width: 540px;
             height: auto;
@@ -41,46 +49,26 @@
             margin-top: 0;
         }
     }
-}
+    
+    header {
+    
+        #auth-signin {
+            display: none;
+        }
 
-@media (max-width: 1270px) {
-    #hero {
-        .images {
-            bottom: -10%;
+        .nav-link {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0 0 0 1rem;
         }
     }
-}
 
-header {
-    
-@media (max-width: 900px) {
-    #auth-signin {
-        display: none;
-    }
-
-    .nav-link {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 0 0 0 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-   
-    .label {
-        display: none;
-    }
-}
-
-}
-
-@media (max-width: 900px) {
     #brand-5 {
         display: none;
     }
@@ -88,14 +76,6 @@ header {
         display: none;
     }
 
-    @media (max-width: 576px) {
-        #brands {
-            display: none;
-        }
-    }
-}
-
-@media (max-width: 900px) {
     .leftphone {
         display: none;
     }
@@ -109,22 +89,7 @@ header {
     .features-text {
         text-align: center;
     }
-}
 
-@media (max-width: 576px) {
-    #pagetwo .container {
-        max-width: 540px;
-        padding: 2rem 4rem;
-    }
-
-    .featuresection {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width: 900px) {
     #pagethree .container {
         max-width: 720px;
     }
@@ -154,33 +119,9 @@ header {
         width: 30%;
     }
 
-    @media (max-width: 576px) {
-        #phone-1 {
-            display: none;
-        }
-        #phone-4 {
-            display: none;
-        }
-        #phone-2 {
-            padding-top: 2rem;
-            width: 40%;
-        }
-        .undercarousel {
-            padding: 2rem;
-        }
-        #pagethree h1 {
-            padding: 2rem 0;
-        }
-    }
-}
-
-@media (max-width: 900px) {
     #pagefour {
-        display: none;
+        display: none; 
     }
-}
-
-@media (max-width: 900px) {
     #pagefive {
         .headtext {
             display: none;
@@ -190,9 +131,7 @@ header {
             display: flex;
         }
     }
-}
 
-@media (max-width: 900px) {
     #FAQ {
         .FAQleft {
             display: none;
@@ -207,6 +146,47 @@ header {
         .subscribeText {
             display: none;
         }
+    }
+}
+
+
+@media (max-width: 576px) {
+   
+    .label {
+        display: none;
+    }
+
+    #brands {
+        display: none;
+    }
+
+
+
+    #pagetwo .container {
+        max-width: 540px;
+        padding: 2rem 4rem;
+    }
+
+    .featuresection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #phone-1 {
+        display: none;
+    }
+    #phone-4 {
+        display: none;
+    }
+    #phone-2 {
+        padding-top: 2rem;
+        width: 40%;
+    }
+    .undercarousel {
+        padding: 2rem;
+    }
+    #pagethree h1 {
+        padding: 2rem 0;
     }
 }
 
