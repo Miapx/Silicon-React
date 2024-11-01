@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 
 const DarkModeSwitch = () => {
@@ -34,7 +34,7 @@ const DarkModeSwitch = () => {
     <div className="btn-toggle-switch">
         <span className="label">Dark Mode</span>
         <label htmlFor="darkmode-switch" className="toggle-switch">
-            <input type="checkbox" checked={isDarkMode} onChange={toggleDarkMode} />
+            <input id="darkmode-switch" type="checkbox" checked={isDarkMode} onChange={toggleDarkMode} />
             <span className="slider"></span>
         </label>
     </div>  

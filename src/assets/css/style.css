@@ -33,23 +33,6 @@ input, button, textarea, select {
     font: inherit;
 }
 
-:root[data-theme="light"] {
-    --color-primary: #6366F1;
-    --color-white: #fff;
-    --color-grey900: #0B0F19;
-    --color-grey800: #33354D;
-    --color-grey600: #9397AD;
-    --color-grey500: #B4B7C9;
-    --color-grey300: #E2E5F1;
-    --color-grey400: #D4D7E5;
-    --color-grey700: #565973;
-    --color-grey100: #F3F6FF;
-    --color-bg: #fff;
-    --color-smsucess: #22C55E;
-    --color-bg-card: hsl(225, 100%, 100%);
-    --color-err: #EF4444;
-}
-
 :root[data-theme="dark"] {
     color-scheme: dark;
     --color-bg: #0B0F19;
@@ -63,6 +46,10 @@ input, button, textarea, select {
     }
 
     h1, h2, h3 {
+        color: #fff;
+    }
+
+    .label {
         color: #fff;
     }
 
@@ -338,6 +325,7 @@ gap: 1rem;
     align-items: center;
     gap: 1rem;
     padding-top: 5rem;
+    padding-bottom: 2rem;
 
     span:hover {
         color: var(--color-primary);

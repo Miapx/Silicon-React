@@ -43,6 +43,14 @@
     }
 }
 
+@media (max-width: 1270px) {
+    #hero {
+        .images {
+            bottom: -10%;
+        }
+    }
+}
+
 header {
     
 @media (max-width: 900px) {

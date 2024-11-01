@@ -1,7 +1,15 @@
 import React from 'react'
 import quotes from '../assets/images/quotes.svg'
+import ratingFour from '../assets/images/rating4.svg'
+import ratingFive from '../assets/images/rating5.svg'
+                        
+
 
 const TestimonialItem = ({item}) => {
+
+// res[0].item.starRating = {ratingFour}
+  // item[0].unshift(item.starRating = {ratingFour})
+
   return (
     
      <div className="reviewbox">
