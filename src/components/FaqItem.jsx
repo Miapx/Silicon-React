@@ -15,14 +15,14 @@ const FaqItem = ({item}) => {
 
 
   return (
-    <div className="accordion-item">                   
-        <a className="accordion-link" href="#question1" onClick={toggleFaqItem}><p className="whitetext">{item.title}</p>
+    <div className="accordion-item"  >                   
+        <a className="accordion-link" href="#question1" onClick={toggleFaqItem}> <p className="whitetext">{item.title}</p>
             <button className="btn-circle" aria-label="Click for answer">
                 <i style={{transform:`rotate(${!showFaqItem ? 180 :0}deg)`, transition: "all 300ms"}} className="fa-solid fa-chevron-down"></i>
             </button>  
         </a>             
-        <div className="answer">
-            <div className={`${showFaqItem ? 'expandable' : ''}`}><p>{item.content}</p></div>
+        <div className="answer" >
+            <div className={`${showFaqItem ? 'expandable' : ''}`} ><p>{item.content}</p></div>
         </div>   
     </div> 
     )

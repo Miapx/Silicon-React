@@ -32,10 +32,10 @@ const PageFour = () => {
             </div>
 
             <div className="imagestransfer">
-                <img className="imageback" src={moneyTransfer} alt="Phone Image" />
+                <img className="imagep4" src={moneyTransfer} alt="Phone Image" />
             </div> 
             <div className="imagespayment">
-                <img className="imageback" src={moneyPayment} alt="Phone Image" />
+                <img className="imagep4" src={moneyPayment} alt="Phone Image" />
             </div>
 
             <div className="moneypaymenttext">
