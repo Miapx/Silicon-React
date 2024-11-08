@@ -5,14 +5,15 @@ import Navbar from './Navbar'
 import DarkModeSwitch from './DarkModeSwitch'
 import BtnSignIn from './BtnSignIn'
 import HamMenu from './HamMenu'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
   return (
     <header>
         <div className="container">
-                <a id="logo" href="index.html"><img src={Logotype} alt="silicon logotype" /></a>
-                <a id="logolight" href="index.html"><img src={LogotypeLight} alt="silicon logotype" /></a>
+                <Link id="logo" to="/"><img src={Logotype} alt="silicon logotype" /></Link>
+                <Link id="logolight" to="/"><img src={LogotypeLight} alt="silicon logotype" /></Link>
 
                 <Navbar />
                 <DarkModeSwitch />

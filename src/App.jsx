@@ -3,31 +3,29 @@ import './assets/css/style.css'
 import './assets/css/responsive.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Hero from './components/Hero'
-import Brands from './components/Brands'
-import { PageTwo } from './components/PageTwo'
-import PageThree from './components/PageThree'
-import PageFour from './components/PageFour'
-import Testimonials from './components/Testimonials'
-import Questions from './components/Questions'
-import Subscribe from './components/Subscribe'
+import Home from './views/Home.jsx'
+import Features from './views/Features.jsx'
+import Contact from './views/Contact.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
 
   return (
     <>
-    <Header />
 
-    <main>
-      <Hero />
-      <Brands />
-      <PageTwo />
-      <PageThree />
-      <PageFour />
-      <Testimonials />
-      <Questions />
-      <Subscribe />
+    <BrowserRouter>
+      <Header />
+      <main> 
+        <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
     </main>
+    </BrowserRouter>
 
     <Footer />
 

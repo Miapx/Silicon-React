@@ -147,6 +147,18 @@
             display: none;
         }
     }
+
+    .contactpage .contactusleft {
+        display: none;
+    }
+
+    .consult-card {
+        margin: auto;
+    }
+
+    .map {
+        display: none;
+    }
 }
 
 

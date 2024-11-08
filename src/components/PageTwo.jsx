@@ -38,3 +38,5 @@ export const PageTwo = () => {
         </section>
     )
 }
+
+export default PageTwo

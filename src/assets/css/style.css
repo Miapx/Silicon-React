@@ -40,6 +40,7 @@ input, button, textarea, select {
     --color-grey400: #d4d7e535;
     --color-grey300: #f1e8e252;
     --color-bg-card: #f3f6ff0c;
+    --color-bg-card: #0B0F19;
 
     p, li, .text-S, .text-L {
         color: #ffffff86;
@@ -793,6 +794,9 @@ gap: 1rem;
         font-weight: 500;
         cursor: pointer;
     }
+    .invalid-input {
+        padding: .5rem 3rem;
+    }
 }
 
 .emailtosub {
@@ -836,11 +840,11 @@ position: relative;
 .invalid-input {
     color: var(--color-err);
     font-size: .8rem;
-    padding: .5rem 3rem;
+    /* padding: .5rem 3rem; */
     /* display: none; */
 }
 
-
+/* 
 .error {
 
     .form-input {
@@ -849,7 +853,7 @@ position: relative;
     .invalid-input {
         display: block;
     }
-}
+} */
 
 
 .pagenav {
@@ -874,13 +878,12 @@ position: relative;
 .contactpage {
     display: flex;
     justify-content: space-between;
-
+    gap: 2rem;
 
     .contactus {
         display: flex;
         align-items: center;
         gap: 1rem;
-        /* padding-bottom: 2rem; */
         margin: 4rem 0;
 
         h3 {
@@ -942,8 +945,18 @@ position: relative;
 }
 
 .findus {
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 6rem;
+}
+
+.map {
+    width: 45%;
+    object-fit: contain;
+}
+
+.mapImg {
+    width: 100%;
+    object-fit: contain;
 }
 
 #align-fs {
