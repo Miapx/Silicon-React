@@ -1,7 +1,6 @@
 import React from 'react'
 import quotes from '../assets/images/quotes.svg'
-import ratingFive from '../assets/images/rating5.svg'
-// Importing a static picture for ratings that will be looped out twice, since the api doesn't return ratings. Checked with Therese and was OK to do so. 
+import StarRating from './StarRating'
                         
 
 
@@ -12,7 +11,7 @@ const TestimonialItem = ({item}) => {
     
      <div className="reviewbox">
      <img className="quotes" src={quotes} alt="Quotes" />
-        <img className="ratings" src={ratingFive} alt="rating" />
+     <StarRating starRating={item.starRating}/>
         <p className="clientrating text-L">{item.comment}</p>
         <div className="clientinfo">
             <img src={item.avatarUrl} alt="Client profile pic" />

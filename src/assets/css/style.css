@@ -627,6 +627,7 @@ gap: 1rem;
 .reviewbox .ratings {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
+    color: #e1d71c;
 }
 
 .reviewbox .quotes {
@@ -840,26 +841,11 @@ position: relative;
 .invalid-input {
     color: var(--color-err);
     font-size: .8rem;
-    /* padding: .5rem 3rem; */
-    /* display: none; */
 }
-
-/* 
-.error {
-
-    .form-input {
-        border-color: var(--color-err)
-    }
-    .invalid-input {
-        display: block;
-    }
-} */
-
 
 .pagenav {
     display: flex;
     gap: 1rem;
-
 }
 
 .pagenav a.active {
