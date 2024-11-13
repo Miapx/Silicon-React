@@ -177,6 +177,11 @@
     .map {
         display: none;
     }
+    
+    .socials {
+        justify-content: center;
+
+    }
 }
 
 
