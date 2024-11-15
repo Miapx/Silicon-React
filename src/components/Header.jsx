@@ -12,17 +12,14 @@ const Header = () => {
   return (
     <header>
         <div className="container">
-                <Link id="logo" to="/"><img src={Logotype} alt="silicon logotype" /></Link>
-                <Link id="logolight" to="/"><img src={LogotypeLight} alt="silicon logotype" /></Link>
-
-                <Navbar />
-                <DarkModeSwitch />
-                <BtnSignIn />
-                <HamMenu />
-
-              
-            </div>
-        </header>
+            <Link id="logo" to="/"><img src={Logotype} alt="silicon logotype" /></Link>
+            <Link id="logolight" to="/"><img src={LogotypeLight} alt="silicon logotype" /></Link>
+            <Navbar />
+            <DarkModeSwitch />
+            <BtnSignIn />
+            <HamMenu />
+        </div>
+    </header>
     )
 }
 

@@ -26,8 +26,8 @@ const PageFour = () => {
                     </li>
                 </ul>
                 <a href="#" aria-label="Learn more about money transfers" className="btn-primary">
-                <span>Learn more</span> 
-                <img src={arrowRight} alt="Arrow pointing right" />   
+                    <span>Learn more</span> 
+                    <img src={arrowRight} alt="Arrow pointing right" />   
                 </a>
             </div>
 

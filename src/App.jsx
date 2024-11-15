@@ -19,12 +19,12 @@ function App() {
       <main> 
         <Routes>
 
-        <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/contact" element={<Contact />} />
 
-      </Routes>
-    </main>
+        </Routes>
+      </main>
     </BrowserRouter>
 
     <Footer />

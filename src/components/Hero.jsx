@@ -19,7 +19,6 @@ const Hero = () => {
                     <a className="btn-download-app-light" href="#"><img src={appStoreLight} alt="appstore" /></a>
                     <a className="btn-download-app" href="#"><img src={googlePlayDark} alt="googleplay" /></a>
                     <a className="btn-download-app-light" href="#"><img src={googlePlayLight} alt="appstore" /></a>
-
                 </div>
                 <a href="#" className="discover-more">
                     <span className="btn-circle">

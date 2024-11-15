@@ -15,27 +15,26 @@ export const PageTwo = () => {
 
   return (
 
-        <section id="pagetwo">
-            <div className="container"> 
-                <div className="leftphone">
-                    <img src={leftPhone} alt="Another phone" />
+    <section id="pagetwo">
+        <div className="container"> 
+            <div className="leftphone">
+                <img src={leftPhone} alt="Another phone" />
+            </div>
+            <div className="content">
+                <div className="features-text"> 
+                    <h1>App Features</h1>
+                    <p className="text-L">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt quaerat cumque laudantium repudiandae minima rem nam earum eius architecto.</p>
                 </div>
-                <div className="content">
-                    <div className="features-text"> 
-                        <h1>App Features</h1>
-                        <p className="text-L">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt quaerat cumque laudantium repudiandae minima rem nam earum eius architecto.</p>
-                    </div>
-                    <div className="featuresection">
+                <div className="featuresection">
 
-                        {
-                            featureBox.map((item, index) => (<FeatureBox key={index} item={item} />))
-                        }
+                    {
+                        featureBox.map((item, index) => (<FeatureBox key={index} item={item} />))
+                    }
 
-
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     )
 }
 

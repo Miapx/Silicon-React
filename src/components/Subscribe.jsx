@@ -43,22 +43,17 @@ const Subscribe = () => {
                 <h2>Subscribe to our newsletter to stay informed about latest updates</h2>
             </div>
             <form onSubmit={handleSubmit}  id="emailtosub" noValidate> 
-
                 <div className='emailtosub'> 
-                <label className="form-label" htmlFor="email"></label>
-                <i className="fa-thin fa-envelope envelope"></i>
-                <input className="form-input" type="email" name="email" value={emailData.email} onChange={handleChange} id="sub-email" required placeholder="Your email" />
-                
-                <button className="btn-primary">
-                    <span>Subscribe</span> 
-                </button>
+                    <label className="form-label" htmlFor="email"></label>
+                    <i className="fa-thin fa-envelope envelope"></i>
+                    <input className="form-input" type="email" name="email" value={emailData.email} onChange={handleChange} id="sub-email" required placeholder="Your email" />
+                    <button className="btn-primary">
+                        <span>Subscribe</span> 
+                    </button>
                 </div>
-
                 <p className='invalid-input'>{errors.email && errors.email}</p>
-
             </form>
         </div>
-
     </section>  
     )
 }

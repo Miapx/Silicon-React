@@ -58,7 +58,6 @@ const ConsultCard = () => {
 
         <button type="submit" className="btn-primary">Make an appointment</button>
     </form>
-
 </div>
   )
 }
